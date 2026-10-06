@@ -43,6 +43,16 @@ public class StudiKasus2 {
             } else {
                 System.out.println("Status : Tidak memperoleh dana penghargaan (hanya untuk Juara 1/2/3)");
             }
+
+        } else if (jenis.equalsIgnoreCase("PKM")) {
+            if (dokumen >= 4 && pkm == 1) {
+                System.out.println("Status : Berhak memperoleh dana penghargaan (PKM lolos pendanaan)");
+            } else {
+                System.out.println("Status : Tidak memperoleh dana penghargaan");
+            }
+
+        } else if (jenis.equalsIgnoreCase("LAINNYA")) {
+            System.out.println("Status : Tidak memperoleh dana penghargaan (jenis kegiatan tidak termasuk ketentuan)");
         }
     }
 }
